@@ -1,0 +1,125 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: #0E0604;
+    background: -moz-linear-gradient(-45deg, #0E0604 0%, #80033A 50%, #100D07 100%);
+    background: -webkit-linear-gradient(-45deg, #0E0604 0%, #80033A 50%, #100D07 100%);
+    background: linear-gradient(135deg, #0E0604 0%, #80033A 50%, #100D07 100%);
+
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .jogo-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  
+  .forca {
+    fill: transparent;
+    stroke: #fff;
+    stroke-width: 4px;
+    stroke-linecap: round;
+  }
+  
+  .forca-parte {
+    display: none;
+  }
+  
+  .letras-erradas-container {
+    font-size: 32px;
+  }
+  
+  .letras-erradas-container span {
+    margin: 0 2px;
+  }
+  
+  .palavra-secreta-container {
+    font-size: 45px;
+  }
+  
+  
+  .aviso-palavra-repetida {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px 10px 0 0;
+    padding: 15px 20px;
+    position: absolute;
+    bottom: -55px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .aviso-palavra-repetida p {
+    margin: 0;
+  }
+  
+  .aviso-palavra-repetida.show {
+    transform: translateY(-50px);
+  }
+  
+  .palavra-secreta-container span {
+    margin: 0 5px;
+  }
+
+
+   .palavraexiste {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px 10px 0 0;
+    padding: 15px 20px;
+    position: absolute;
+    bottom: -55px;
+    transition: transform 0.3s ease-in-out;
+}
+.palavraexiste p {
+    margin: 0;
+  }
+  
+  .palavraexiste.show {
+    transform: translateY(-50px);
+  }
+  
+  .popup-container {
+    background-color: rgba(0, 0, 0, 0.849);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* display: flex; */
+    display: none;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .popup {
+    background: #d8347b;
+    border-radius: 5px;
+    box-shadow: 0 15px 10px 3px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .popup button {
+    cursor: pointer;
+    background-color: #fff;
+    border: 0;
+    margin-top: 20px;
+    padding: 12px 20px;
+    font-size: 16px;
+  }
+  .shadowtext {  
+    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
+  }
+
+  #erradas{
+      color: #80033A;
+      
+  }
+.add{
+    border-radius: 20%;
+    border-color: #FF2D95;
+    background-color: #db4b93;
+}
